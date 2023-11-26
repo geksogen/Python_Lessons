@@ -36,18 +36,20 @@ class Bird(pg.sprite.Sprite):
     def jump(self):
         self.velocity = self.lift
 
+def is_key_pressed(key):
+    return pg.key.get_pressed()[key]
+
 bird = Bird()
 
 def main():
     clock = pg.time.Clock()
     while True:
-        events = pg.event.get()
-        for e in events:
+        for e in pg.event.get():
             if e.type == pg.QUIT:
                 return
-            if e.type == pg.KEYDOWN:
-                if e.type == pg.K_UP:
-                    bird.jump()
+        if is_key_pressed(pg.K_SPACE):
+            bird.jump()
+
 
         bird.update()
         screen.fill('white')
