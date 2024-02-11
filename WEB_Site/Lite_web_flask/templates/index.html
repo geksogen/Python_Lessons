@@ -4,51 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   </head>
   <body>
+
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="/blog" class="nav-link">Блог</a></li>
+        <li class="nav-item"><a href="/contacts" class="nav-link">Контакты</a></li>
+      </ul>
+    </header>
     
-    <ul class="main-menu">
-        <li><a href="/">Главная</a></li>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/contacts">Контакты</a></li>
+    <div class="bg-body-tertiary p-5 rounded">
+      <div class="col-sm-8 py-5 mx-auto">
+        <h3 class="display-5 fw-normal">Добро пожаловать на мою страницу</h3>
+        <p class="fs-5">
+          <img src="../static/image/about-photo.png" width="200" height="200" alt="my photo">
+        </p>
+        <p>Я начинающий разработчик на Python и это мой первый сайт. Я живу и учусь в Москве, в свободное время играю в компьютерные игры и гуляю с друзьями.</p>
+        <h4 class="display-5 fw-normal">Почему мне нравится программировать</h4>
+        <p>
+          <ul>
+        <li>С помощью программирования я могу создавать полезные сайты и делать мир удобнее.</li>
+        <li>В программировании ты сразу видишь результат своих усилий.</li>
+        <li>В программировании много интересных задач, никогда не соскучишься!</li>
+          </ul>
+        </p>
+    </div>
+    </div>
+
+
+    <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Главная</a></li>
+      <li class="nav-item"><a href="/blog#" class="nav-link px-2 text-body-secondary">Блог</a></li>
+      <li class="nav-item"><a href="/contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
     </ul>
-    
-    <div class='top'>
-      <h1>Привет!</h1>
-      <h1>Меня зовут</h1>
-      <h1>Матвей</h1>
-      <p class="top__text">Добро пожаловать на мою страницу</p>
-    </div>
-
-    <img class="w-75" src="../static/image/about-photo.png" alt="my photo">
-
-    <div class="about" id="about">
-      <h2 class="heading">Еще раз привет!</h2>
-      <p class="text">Я начинающий разработчик на Python и это мой первый сайт. Я живу и учусь в Москве, в свободное время играю в компьютерные игры и гуляю с друзьями.</p>
-    </div>
-
-    <div class="why">
-      <h2 class="heading">Почему мне нравится программировать?</h2>
-      <div class="card">
-          <p class="text">С помощью программирования я могу создавать полезные сайты и делать мир удобнее.</p>
-      </div>
-
-      <div class="card">
-        <p class="text">В программировании ты сразу видишь результат своих усилий.</p>
-      </div>
-
-      <div class="card">
-        <p class="text">В программировании много интересных задач, никогда не соскучишься!</p>
-      </div>
-    </div>
-    
-    <footer class="footer">
-      <img src="../static/image/logo.svg" alt="logo">
-      <div class="icons">
-        <a href="#"><img src="../static/image/vk.svg" alt="vk"></a>
-        <a href="#"><img src="../static/image/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="../static/image/instagram.svg" alt="instagram"></a>
-      </div>
+    <p class="text-center text-body-secondary">© 2024 My site, Inc</p>
     </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 </html>
