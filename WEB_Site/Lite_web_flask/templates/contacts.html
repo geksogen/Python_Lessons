@@ -4,36 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   </head>
   <body>
-    
-    <ul class="main-menu">
-        <li><a href="/">Главная</a></li>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/contacts">Контакты</a></li>
+
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="/blog" class="nav-link">Блог</a></li>
+        <li class="nav-item"><a href="/contacts" class="nav-link active">Контакты</a></li>
+      </ul>
+    </header>
+
+    <div class="bg-body-tertiary p-5 rounded">
+      <div class="col-sm-8 py-5 mx-auto">
+        <h3 class="display-5 fw-normal">Мои контаты</h3>
+        <p class="fs-5">
+          <img src="../static/image/about-photo.png" width="200" height="200" alt="my photo">
+        </p>
+          <ul>
+        <li>@mail: test@mail.com</li>
+        <li>TG: test.test</li>
+        <li>VK: test</li>
+          </ul>
+        </p>
+    </div>
+    </div>
+
+    <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Главная</a></li>
+      <li class="nav-item"><a href="/blog#" class="nav-link px-2 text-body-secondary">Блог</a></li>
+      <li class="nav-item"><a href="/contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
     </ul>
-
-    <div class="contacts-top">
-      <h2 class="heading text-dark pt-5 pb-5"> Свяжитесь со мной</h2>
-      <p>Буду рад новым знакомым, которые интересуются программированием</p>
-      <img class="w-100" src="../static/image/contacts-top-back.svg" alt="img">
-    </div>
-
-    <div class="contacts-info">
-      <p><strong>Адрес:</strong> 125167, Ленинградский проспект, дом 39, стр. 79</p>
-      <p><strong>Телефон:</strong> + 7 (906) 999-99-99</p>
-      <p><strong>Email:</strong> sales@corp.mail.ru</p>
-    </div>
-
-    
-    <footer class="footer">
-      <img src="../static/image/logo.svg" alt="logo">
-      <div class="icons">
-        <a href="#"><img src="../static/image/vk.svg" alt="vk"></a>
-        <a href="#"><img src="../static/image/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="../static/image/instagram.svg" alt="instagram"></a>
-      </div>
+    <p class="text-center text-body-secondary">© 2024 My site, Inc</p>
     </footer>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 </html>
