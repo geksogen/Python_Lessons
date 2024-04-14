@@ -1,3 +1,4 @@
 API_ID = <>
 API_HASH = "<>"
 BOT_TOKEN = "<>"
+OWM_KEY = 'd852c26a2ec8983bf0b3932f78dff564'

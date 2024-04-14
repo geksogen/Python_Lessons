@@ -4,7 +4,7 @@ import buttons
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [buttons.time_button, buttons.help_button],
-        [buttons.settings_button],
+        [buttons.settings_button, buttons.hello_button, buttons.weather],
     ],
     resize_keyboard=True,
 )
