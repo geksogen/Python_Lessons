@@ -37,7 +37,7 @@ async def weather_command(client: Client, message: Message):
     if message.command and len(message.command) > 1:
         city = message.command[1]
     else:
-        city = 'Moscow'
+        city = 'Kaluga'
 
     weather = get_current_weather(city)
     await message.reply(weather)
