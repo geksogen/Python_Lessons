@@ -3,15 +3,8 @@ import buttons
 
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [buttons.time_button, buttons.help_button],
-        [buttons.settings_button, buttons.hello_button, buttons.weather],
+        [buttons.time_button],
+        [buttons.weather, buttons.weather_forecast],
     ],
     resize_keyboard=True,
-)
-
-settings_keyboard = ReplyKeyboardMarkup(
-    keyboard=[
-        [buttons.back_button],
-    ],
-    resize_keyboard=True
 )

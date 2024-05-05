@@ -94,6 +94,4 @@ def get_forecast(city: str) -> str:
 
     return forecast
 
-print(get_forecast('Kaluga'))
-
 

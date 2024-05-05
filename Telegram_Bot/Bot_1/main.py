@@ -1,6 +1,6 @@
 import time
 import random
-from weather import get_current_weather
+from weather import get_current_weather, get_forecast
 import pyrogram
 import config
 from pyrogram.types import Message
@@ -18,14 +18,9 @@ bot = Client(
     name= "Echo_bot"
 )
 
-#@bot.on_message()
-#async def echo(client: Client, message: Message):
-#    await message.reply(message.text)
-
-@bot.on_message(filters=filters.command('start') | button_filter(buttons.back_button))
+@bot.on_message(filters=filters.command('start'))
 async def time_command(client: Client, message: Message):
-    await message.reply(f"Привет я бот, который умеет показывать время. Нажми на кнопку {buttons.help_button.text} для получения списка команд.", reply_markup=keyboards.main_keyboard)
-
+    await message.reply(f"Привет я бот, который умеет показывать время и погоду", reply_markup=keyboards.main_keyboard)
 
 @bot.on_message(filters=filters.command('time') | button_filter((buttons.time_button)))    #время
 async def time_command(client: Client, message: Message):
@@ -40,6 +35,16 @@ async def weather_command(client: Client, message: Message):
         city = 'Kaluga'
 
     weather = get_current_weather(city)
+    await message.reply(weather)
+
+@bot.on_message(filters=filters.command('weather-forecast') | button_filter((buttons.weather_forecast)))
+async def weather_command(client: Client, message: Message):
+    if message.command and len(message.command) > 1:
+        city = message.command[1]
+    else:
+        city = 'Kaluga'
+
+    weather = get_forecast(city)
     await message.reply(weather)
 
 

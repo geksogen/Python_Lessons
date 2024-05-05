@@ -1,9 +1,7 @@
 from pyrogram.types import KeyboardButton
 from pyrogram import emoji
 
-back_button = KeyboardButton(f'{emoji.BACK_ARROW} Назад')
+
 time_button = KeyboardButton(f'{emoji.ALARM_CLOCK} Время')
-help_button = KeyboardButton(f'{emoji.WHITE_QUESTION_MARK} Помощь')
-settings_button = KeyboardButton(f'{emoji.GEAR} Настройки')
-hello_button = KeyboardButton(f'{emoji.WAVING_HAND} Hello')
 weather = KeyboardButton(f'{emoji.CLOUD} Погода')
+weather_forecast = KeyboardButton(f'{emoji.SUN} Прогноз на 3 дня')
